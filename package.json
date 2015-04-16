@@ -1,0 +1,57 @@
+{
+  "name": "michals-blog",
+  "version": "0.1.0",
+  "description": "Front-end for my own blog build on express-blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mklakakilli/michals-blog.git"
+  },
+  "keywords": [
+    "michals-blog",
+    "express-blog",
+    "express",
+    "blog",
+    "nodejs",
+    "front-end"
+  ],
+  "author": "Michal Vanko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mklakakilli/michals-blog/issues"
+  },
+  "homepage": "https://github.com/mklakakilli/michals-blog",
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-inject": "*",
+    "gulp-jshint": "*",
+    "gulp-less": "*",
+    "gulp-order": "*",
+    "gulp-rename": "*",
+    "gulp-spawn-mocha": "*",
+    "jshint-stylish": "*",
+    "karma": "*",
+    "karma-babel-preprocessor": "*",
+    "karma-firefox-launcher": "*",
+    "karma-mocha": "*",
+    "require-dir": "^0.3.0",
+    "vinyl-paths": "*"
+  },
+  "jspm": {
+    "directories": {},
+    "configFile": "jspm-config.js",
+    "dependencies": {
+      "babel": "npm:babel-core@^5.1.10"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.0.12",
+      "babel-runtime": "npm:babel-runtime@^5.0.12",
+      "core-js": "npm:core-js@^0.8.1"
+    }
+  }
+}

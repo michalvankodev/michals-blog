@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Michal's blog</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body aurelia-app>
+    <div class="splash">
+      <div class="message">Michal's blog</div>
+      <i class="fa fa-spinner fa-spin"></i>
+    </div>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+     System.config({
+       "paths": {
+         "*": "src/*.js"
+       }
+     });
+    </script>
+    <script>
+      System.import('aurelia-bootstrapper');
+    </script>
+  </body>
+</html>
