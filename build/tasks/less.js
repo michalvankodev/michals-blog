@@ -10,5 +10,5 @@ gulp.task('less', function() {
     .pipe(rename(function(path) {
       path.dirname = '';
     }))
-    .pipe(gulp.dest(paths.cssOutput));
+    .pipe(gulp.dest(paths.cssOutputFolder));
 });

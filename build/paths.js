@@ -7,7 +7,8 @@ module.exports = {
   html: source + '**/*.html',
   less: source + '**/*.less',
   output: output,
-  cssOutput: 'styles/',
+  cssOutputFolder: 'styles/',
+  cssOutputFiles: 'styles/**/*.css',
   indexHtml: './index.html',
   e2eSpecsSrc: 'e2e/src/*.js',
   e2eSpecsDist: 'e2e/dist/'

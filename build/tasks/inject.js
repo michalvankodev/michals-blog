@@ -4,7 +4,7 @@ var inject = require('gulp-inject');
 var order = require('gulp-order');
 
 gulp.task('inject', ['less'], function() {
-  var sources = gulp.src(paths.cssOutput, {read: false})
+  var sources = gulp.src(paths.cssOutputFiles, {read: false})
    .pipe(order([
      '**/reset.css',
      '**/main.css',
