@@ -7,8 +7,5 @@ var rename = require('gulp-rename');
 gulp.task('less', function() {
   return gulp.src(paths.less)
     .pipe(less())
-    .pipe(rename(function(path) {
-      path.dirname = '';
-    }))
-    .pipe(gulp.dest(paths.cssOutputFolder));
+    .pipe(gulp.dest(paths.root));
 });
