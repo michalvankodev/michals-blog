@@ -1,0 +1,8 @@
+<template>
+  <require from="./date-format"></require>
+
+  <div class="date-plate">
+    <header>${dateObject | dateFormat:'Do'}</header>
+    <footer>${dateObject | dateFormat:'MMM YYYY'}</footer>
+  </div>
+</template>

@@ -1,0 +1,10 @@
+<template>
+  <require from="../article/small-view"></require>
+  <h2>Latest posts</h2>
+
+  <small-article
+    repeat.for="article of latestPosts"
+    article.bind="article"
+    class="latest-post">
+  </small-article>
+</template>
