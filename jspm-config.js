@@ -24,6 +24,7 @@ System.config({
     "core-js": "npm:core-js@0.8.3",
     "css": "github:systemjs/plugin-css@0.1.9",
     "flexboxgrid": "npm:flexboxgrid@6.1.1",
+    "normalize.css": "npm:normalize.css@3.0.3",
     "github:aurelia/binding@0.5.0": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.6.0",
       "aurelia-metadata": "github:aurelia/metadata@0.4.0",

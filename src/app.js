@@ -1,6 +1,8 @@
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
-import 'flexboxgrid/css/index.css!';
+import 'normalize.css/normalize.css!';
+import 'flexboxgrid/dist/flexboxgrid.css!';
+import './app.css!';
 
 @inject(Router)
 export class App {

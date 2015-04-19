@@ -16,6 +16,7 @@ function reportChange(event) {
 gulp.task('watch', ['lint', 'serve'], function() {
   gulp.watch(paths.source, browserSync.reload).on('change', reportChange);
   gulp.watch(paths.html, browserSync.reload).on('change', reportChange);
+  gulp.watch(paths.indexHtml, browserSync.reload).on('change', reportChange);
   gulp.watch(paths.less, ['inject']).on('change', reportChange);
   gulp.watch(paths.cssOutputFiles, browserSync.reload);
 });
