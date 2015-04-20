@@ -1,10 +1,15 @@
 <template>
   <require from="../article/small-view"></require>
-  <h2>Latest posts</h2>
 
-  <small-article
-    repeat.for="article of latestPosts"
-    article.bind="article"
-    class="latest-post">
-  </small-article>
+  <section class="latest-posts">
+    <h2>Latest posts</h2>
+
+    <template repeat.for="article of latestPosts">
+      <small-article
+        article.bind="article"
+        class="latest-post">
+      </small-article>
+      <div class="divider" if.bind="!$last"></div>
+    </template>
+  </section>
 </template>

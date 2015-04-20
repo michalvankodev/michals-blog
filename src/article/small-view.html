@@ -3,12 +3,12 @@
   <require from="../strip-tags"></require>
   <require from="../substr"></require>
 
-  <header class="row bottom-xs">
+  <header class="row middle-xs">
     <date-plate date.bind="article.createdDate"></date-plate>
     <h3>${article.title}</h3>
   </header>
-  <div>${article.body | stripTags | substr:'200'}</div>
-  <footer>
+  <div class="article-preview">${article.body | stripTags | substr:'200'}</div>
+  <footer class="end-xs">
     ${article.comments.length} comments
   </footer>
 </template>
