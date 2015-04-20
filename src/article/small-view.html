@@ -1,10 +1,13 @@
 <template>
   <require from="../date-plate/date-plate"></require>
+  <require from="../strip-tags"></require>
+  <require from="../substr"></require>
+
   <header class="row bottom-xs">
     <date-plate date.bind="article.createdDate"></date-plate>
     <h3>${article.title}</h3>
   </header>
-  <div>${article.body}</div>
+  <div>${article.body | stripTags | substr:'200'}</div>
   <footer>
     ${article.comments.length} comments
   </footer>

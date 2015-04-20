@@ -1,8 +1,8 @@
-import {singleton} from 'aurelia-framework'
+import {singleton} from 'aurelia-framework';
 
 @singleton()
 export class PostService {
   constructor() {
-    this.url = 'localhost:3000'
+    this.url = 'localhost:3000';
   }
 }

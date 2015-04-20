@@ -27,6 +27,7 @@ System.config({
     "flexboxgrid": "npm:flexboxgrid@6.1.1",
     "moment": "github:moment/moment@2.10.2",
     "normalize.css": "npm:normalize.css@3.0.3",
+    "striptags": "npm:striptags@2.0.1",
     "github:aurelia/binding@0.5.0": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.6.0",
       "aurelia-metadata": "github:aurelia/metadata@0.4.0",

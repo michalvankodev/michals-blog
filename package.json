@@ -53,7 +53,8 @@
       "css": "github:systemjs/plugin-css@^0.1.9",
       "flexboxgrid": "npm:flexboxgrid@^6.1.1",
       "moment": "github:moment/moment@^2.10.2",
-      "normalize.css": "npm:normalize.css@^3.0.3"
+      "normalize.css": "npm:normalize.css@^3.0.3",
+      "striptags": "npm:striptags@^2.0.1"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.0.12",
