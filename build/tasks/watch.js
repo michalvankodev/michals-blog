@@ -20,3 +20,5 @@ gulp.task('watch', ['lint', 'serve'], function() {
   gulp.watch(paths.less, ['inject']).on('change', reportChange);
   gulp.watch(paths.cssOutputFiles, browserSync.reload);
 });
+
+gulp.task('default', ['watch']);

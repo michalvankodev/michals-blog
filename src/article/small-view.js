@@ -1,7 +1,23 @@
-import {customElement, bindable} from 'aurelia-framework';
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
+    switch (arguments.length) {
+        case 2: return decorators.reduceRight(function(o, d) { return (d && d(o)) || o; }, target);
+        case 3: return decorators.reduceRight(function(o, d) { return (d && d(target, key)), void 0; }, void 0);
+        case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
+    }
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+import { customElement, bindable } from 'aurelia-framework';
 import './article.css!';
-
-@customElement('small-article')
-export class SmallArticle {
-  @bindable article;
-}
+export let SmallArticle = class {
+};
+__decorate([
+    bindable, 
+    __metadata('design:type', Object)
+], SmallArticle.prototype, "article");
+SmallArticle = __decorate([
+    customElement('small-article'), 
+    __metadata('design:paramtypes', [])
+], SmallArticle);
