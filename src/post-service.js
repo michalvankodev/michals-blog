@@ -11,12 +11,12 @@ export class PostService {
   }
 
   getLatestPosts() {
-    var link = '/api/posts?limit=3';
-    return new Promise((resolve, reject) => {
-      this.http.get(this.url + link).then(
-        responseMsg => resolve(JSON.parse(responseMsg.response)),
-        error => reject(error)
-      );
-    });
+    const link = '/api/posts?limit=3';
+    return this.http.get(this.url + link);
+  }
+
+  getLatestComments() {
+    const link = '/api/posts/comments?limit=3';
+    return this.http.get(this.url + link);
   }
 }
