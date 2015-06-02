@@ -1,6 +1,6 @@
 import {bindable} from 'aurelia-framework';
 import './article.css!';
 
-export class SmallArticle {
+export class SmallComment {
   @bindable article;
 }

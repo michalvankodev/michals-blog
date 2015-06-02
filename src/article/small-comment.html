@@ -1,0 +1,18 @@
+<template>
+  <require from="../date-plate/date-format"></require>
+  <require from="../strip-tags"></require>
+  <require from="../substr"></require>
+
+  <div class="comment-preview">${article.comments.body | stripTags | substr:'200'}</div>
+  <footer class="row between-xs">
+    <div class="date">
+      ${article.comments.date | dateFormat:'Do MMM YY'}
+
+      by: <span class="author">${article.comments.author.name}</span>
+    </div>
+
+    <div>
+      in <span class="article"><a class="article-title">${article.title}</a></span>
+   </div>
+  </footer>
+</template>

@@ -1,5 +1,6 @@
 <template>
   <require from="../article/small-article"></require>
+  <require from="../article/small-comment"></require>
 
   <section class="latest-posts">
     <h2>Latest posts</h2>
@@ -9,6 +10,18 @@
         article.bind="article"
         class="latest-post">
       </small-article>
+      <div class="divider" if.bind="!$last"></div>
+    </template>
+  </section>
+
+  <section class="latest-comments">
+    <h2>Latest comments</h2>
+
+    <template repeat.for="article of latestComments">
+      <small-comment
+        article.bind="article"
+        class="latest-comment">
+      </small-comment>
       <div class="divider" if.bind="!$last"></div>
     </template>
   </section>
