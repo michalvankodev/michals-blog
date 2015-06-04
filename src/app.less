@@ -1,9 +1,13 @@
 @shadow: #CBCBCB;
+html {
+  height: 100%;
+}
 
 body {
   font-family: "Open Sans", "sans-serif";
   font-weight: 300;
   font-size: 18px;
+  height: 100%;
 }
 
 h1, h2 {
@@ -18,4 +22,10 @@ h1, h2 {
   background: #BCBCBC;
   margin: 0.3em;
   box-shadow: 1px 1px 2px @shadow;
+}
+
+.content-container {
+  min-height: 100%;
+  background-color: #fff;
+  margin-bottom: 300px;
 }

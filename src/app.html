@@ -1,10 +1,16 @@
 <template>
   <require from="./logo/logo" as="my-logo"></require>
+  <require from="./footer/footer" as="blog-footer"></require>
+  <div class="content-container">
+    <header class="row middle-xs center-xs">
+        <my-logo class="col-xs-2"></my-logo>
+        <h1 class="blog-heading col-xs-8">Michal&#39;s blog</h1>
+    </header>
 
-  <header class="row middle-xs center-xs">
-      <my-logo class="col-xs-2"></my-logo>
-      <h1 class="blog-heading col-xs-8">Michal&#39;s blog</h1>
-  </header>
+    <router-view></router-view>
 
-  <router-view></router-view>
+  </div>
+  <footer>
+    <blog-footer></blog-footer>
+  </footer>
 </template>
