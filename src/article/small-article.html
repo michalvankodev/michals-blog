@@ -4,8 +4,8 @@
   <require from="../substr"></require>
 
   <header class="row middle-xs">
-    <date-plate date.bind="article.createdDate"></date-plate>
-    <h3>${article.title}</h3>
+    <date-plate date.bind="article.createdDate" class="col-xs-2"></date-plate>
+    <h3 class="col-xs-10">${article.title}</h3>
   </header>
   <div class="article-preview">${article.body | stripTags | substr:'200'}</div>
   <footer class="end-xs">
