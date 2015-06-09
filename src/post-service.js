@@ -23,4 +23,9 @@ export class PostService {
     let link = `/api/posts?limit=${limit}&skip=${skip}`;
     return this.http.get(this.url + link);
   }
+
+  getPost(seoTitle) {
+    let link = `/api/posts/${seoTitle}`;
+    return this.http.get(this.url + link);
+  }
 }

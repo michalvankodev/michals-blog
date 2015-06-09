@@ -11,10 +11,11 @@ export class App {
 
     this.router.configure(config => {
       config.options.pushState = true;
-      config.title = 'Michal\'s Blog';
+      config.title = 'Michal\'s blog';
       config.map([
         {route: ['', 'home'], moduleId: 'home/home', nav: true, title:'Michal\'s blog'},
-        {route: ['posts'],    moduleId: 'posts/posts', nav: true, title:'All posts'}
+        {route: 'posts', moduleId: 'posts/posts', nav: true, title:'All posts'},
+        {route: 'posts/:seoTitle', moduleId: 'post/post', nav: false}
       ]);
     });
   }

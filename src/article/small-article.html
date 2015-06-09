@@ -5,7 +5,7 @@
 
   <header class="row middle-xs">
     <date-plate date.bind="article.createdDate" class="col-xs-2"></date-plate>
-    <h3 class="col-xs-10">${article.title}</h3>
+    <h3 class="col-xs-10"><a href="/posts/${article.seoTitle}">${article.title}</a></h3>
   </header>
   <div class="article-preview">${article.body | stripTags | substr:'200'}</div>
   <footer class="end-xs">
