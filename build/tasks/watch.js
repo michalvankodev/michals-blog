@@ -17,6 +17,11 @@ gulp.task('watch', ['lint', 'serve'], function() {
   gulp.watch(paths.js, browserSync.reload).on('change', reportChange);
   gulp.watch(paths.html, browserSync.reload).on('change', reportChange);
   gulp.watch(paths.indexHtml, browserSync.reload).on('change', reportChange);
-  gulp.watch(paths.less, ['inject']).on('change', reportChange);
-  gulp.watch(paths.cssOutputFiles, browserSync.reload);
+  gulp.watch(paths.less, ['less', browserSync.reload]).on('change', reportChange);
 });
+
+/**
+ * Set watch task as default
+ */
+
+gulp.task('default', ['watch']);
