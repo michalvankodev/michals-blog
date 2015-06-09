@@ -1,13 +1,13 @@
 @shadow: #CBCBCB;
 html {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
   font-family: "Open Sans", "sans-serif";
   font-weight: 300;
   font-size: 18px;
-  height: 100%;
+  height: 100vh;
 }
 
 h1, h2 {
@@ -25,7 +25,17 @@ h1, h2 {
 }
 
 .content-container {
-  min-height: 100%;
+  min-height: 100vh;
   background-color: #fff;
+  color: #000;
   margin-bottom: 300px;
+  border-bottom: 1px solid @shadow;
+  box-shadow: 0px 3px 4px #000;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  & > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
