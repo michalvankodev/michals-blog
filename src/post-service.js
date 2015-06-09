@@ -11,12 +11,16 @@ export class PostService {
   }
 
   getLatestPosts() {
-    const link = '/api/posts?limit=3';
-    return this.http.get(this.url + link);
+    return this.getPosts(3);
   }
 
   getLatestComments() {
     const link = '/api/posts/comments?limit=3';
+    return this.http.get(this.url + link);
+  }
+
+  getPosts(limit = 10, skip = 0) {
+    let link = `/api/posts?limit=${limit}&skip=${skip}`;
     return this.http.get(this.url + link);
   }
 }

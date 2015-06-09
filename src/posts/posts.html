@@ -1,0 +1,13 @@
+<template>
+  <require from="../article/small-article"></require>
+
+  <section class="posts">
+    <template repeat.for="article of posts">
+      <small-article
+        article.bind="article"
+        class="post">
+      </small-article>
+      <div class="divider" if.bind="!$last"></div>
+    </template>
+  </section>
+</template>

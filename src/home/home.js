@@ -1,5 +1,4 @@
 import {inject} from 'aurelia-framework';
-import {HttpClient} from 'aurelia-http-client';
 import {PostService} from '../post-service';
 import './home.css!';
 
@@ -21,6 +20,6 @@ export class Home {
     this.postService.getLatestComments().then(
       response => this.latestComments = response.content.results,
       error => this.latestCommentsError = true
-    )
+    );
   }
 }

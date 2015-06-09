@@ -10,10 +10,11 @@ export class App {
     this.router = router;
 
     this.router.configure(config => {
-      config.pushState = true;
+      config.options.pushState = true;
       config.title = 'Michal\'s Blog';
       config.map([
-        {route: '',  moduleId: 'home/home',      nav: true, title:'Michal\'s blog'}
+        {route: ['', 'home'], moduleId: 'home/home', nav: true, title:'Michal\'s blog'},
+        {route: ['posts'],    moduleId: 'posts/posts', nav: true, title:'All posts'}
       ]);
     });
   }

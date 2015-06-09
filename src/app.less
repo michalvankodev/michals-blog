@@ -1,4 +1,8 @@
+@light-blue: #1069DE;
+
 @shadow: #CBCBCB;
+@divider-color: #BCBCBC;
+
 html {
   height: 100vh;
 }
@@ -19,7 +23,7 @@ h1, h2 {
 
 .divider {
   height: 1px;
-  background: #BCBCBC;
+  background: @divider-color;
   margin: 0.3em;
   box-shadow: 1px 1px 2px @shadow;
 }
@@ -31,8 +35,8 @@ h1, h2 {
   margin-bottom: 300px;
   border-bottom: 1px solid @shadow;
   box-shadow: 0px 3px 4px #000;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 
   & > .row {
     margin-left: 0;

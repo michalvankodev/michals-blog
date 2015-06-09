@@ -8,9 +8,3 @@ gulp.task('clean', function() {
   return gulp.src([paths.output])
     .pipe(vinylPaths(del));
 });
-
-// delete css files
-gulp.task('clean-css', function() {
-  return gulp.src([paths.cssOutput])
-    .pipe(vinylPaths(del));
-});
